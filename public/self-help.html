@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Help</title>
+    <link rel="stylesheet" href="css/self-help.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">MentalCare</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chat-support.html">Chat</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="self-help.html" class="active">Self-Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="self-help-container">
+        <!-- Tools Section -->
+        <section class="tools-section">
+            <h2>Self-Help Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Mood Tracker</h3>
+                    <input type="range" id="moodRange" min="1" max="10" step="1">
+                    <p>Mood Level: <span id="moodValue">5</span></p>
+                </div>
+                <div class="tool-card">
+                    <h3>Breathing Exercise</h3>
+                    <button id="startBreathing">Start Breathing</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Gratitude Journal</h3>
+                    <textarea id="gratitudeText" placeholder="What are you grateful for?"></textarea>
+                </div>
+                <div class="tool-card">
+                    <h3>Sleep Tracker</h3>
+                    <input type="date" id="sleepDate">
+                    <input type="time" id="sleepStart" placeholder="Sleep Start">
+                    <input type="time" id="sleepEnd" placeholder="Wake Up">
+                </div>
+                <div class="tool-card">
+                    <h3>Habit Tracker</h3>
+                    <ul>
+                        <li><input type="checkbox" id="exercise"> Exercise</li>
+                        <li><input type="checkbox" id="meditate"> Meditate</li>
+                        <li><input type="checkbox" id="journal"> Journal</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h3>Daily Affirmations</h3>
+                    <p id="affirmationDisplay">"You are strong and capable."</p>
+                    <input type="text" id="newAffirmation" placeholder="Add your affirmation">
+                    <button id="addAffirmation">Add Affirmation</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivational Quotes -->
+        <section class="quotes-section">
+            <h2>Motivational Quotes</h2>
+            <div class="quote-box">
+                <p id="quoteText">"Believe you can, and you're halfway there." – Theodore Roosevelt</p>
+                <button id="newQuote">Inspire Me</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/self-help.js"></script>
+</body>
+</html>

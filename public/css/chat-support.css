@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D2E8E8; /* Light teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+.chat-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #3E9E9E; /* Soothing teal */
+}
+
+#messages {
+    background-color: #f0f0f0;
+    padding: 15px;
+    height: 300px;
+    overflow-y: hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    flex-grow: 1;
+    max-height: 300px; /* Set a maximum height for the messages area */
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E3F2F3; /* Light teal background for messages */
+    width: fit-content;
+}
+
+.support-message {
+    background-color: #4CAF50; /* Green for support messages */
+    color: white;
+}
+
+.user-message {
+    background-color: #3E9E9E; /* Soothing teal for user messages */
+    color: white;
+    align-self: flex-end;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3E9E9E; /* Soothing teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F4D06F; /* Calming yellow */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Header */
+header {
+    background-color: #3E9E9E;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+    width: 100%;
+    position: fixed; /* Fix the header to the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+nav .logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F4D06F;
+    transform: scale(1.1);
+}
+
+

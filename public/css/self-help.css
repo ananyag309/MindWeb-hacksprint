@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #dbe7ef);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #3E9E9E;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+nav .logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F4D06F;
+    transform: scale(1.1);
+}
+
+/* Main Content */
+.self-help-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2.2rem;
+    color: #3E9E9E;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #F4D06F;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Tools Section */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tool-card {
+    background: #F9F9F9;
+    padding: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card button,
+.tool-card textarea,
+.tool-card input {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.tool-card button {
+    background: #3E9E9E;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tool-card button:hover {
+    background: #3E9E9E;
+}
+
+/* Quotes Section */
+.quotes-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.quote-box {
+    background: #3E9E9E;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-box button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #F4D06F;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #3E9E9E;
+    transition: background 0.3s ease;
+}
+
+.quote-box button:hover {
+    background: #E0BA5C;
+}
+
+
